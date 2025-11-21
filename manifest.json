@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "PMC Discord Finder",
+  "version": "2.1",
+  "description": "Find Discord mentions and links on PlanetMinecraft pages and save them to a log.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.planetminecraft.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
